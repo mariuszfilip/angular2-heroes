@@ -1,0 +1,13 @@
+<h2>Dashboard</h2>
+<ul class="heroes">
+  <li *ngFor="let heroFor of heroes">
+      <span (click)="onSelect(heroFor)" class="badge">{{heroFor.id}}</span>{{heroFor.name}}
+  </li>
+</ul>
+
+<div *ngIf="selectedHero">
+    <h2>{{selectedHero.name}}</h2>
+    <div><label>id: </label>{{selectedHero.id}}</div>
+    <div><label>name: </label>{{selectedHero.name}}</div>
+
+</div>
