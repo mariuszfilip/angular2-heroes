@@ -1,5 +1,6 @@
 import {Component, OnInit} from '@angular/core';
 import {HeroesService} from './heroes.service'
+import {Hero} from './hero';
 
 @Component({
     selector: 'app-dashboard',
@@ -23,11 +24,6 @@ export class DashboardComponent implements OnInit {
     onSelect(selectedHeroForm: Hero): void {
         this.selectedHero = selectedHeroForm;
     }
-}
-
-export class Hero {
-    id: number;
-    name: string;
 }
 
 export const HEROES: Hero[] = [

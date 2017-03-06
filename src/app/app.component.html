@@ -1,10 +1,12 @@
 <h1>
   {{title}}
 </h1>
+<body>
 <nav>
   <a (click)="goToDashBoard()">Dashboard</a>
   <a (click)="goToHeroes()" >Heroes</a>
+  <a routerLink="/dashboard">Dashboard 2</a>
+  <a routerLink="/heroes">Heroes 2</a>
 </nav>
-<body>
 <router-outlet></router-outlet>
 </body>

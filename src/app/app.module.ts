@@ -7,12 +7,14 @@ import { RouterModule } from '@angular/router';
 import { AppComponent } from './app.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { HeroesComponent } from './heroes/heroes.component';
+import { HeroesDetailsComponent } from './heroes-details/heroes-details.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     DashboardComponent,
-    HeroesComponent
+    HeroesComponent,
+    HeroesDetailsComponent
   ],
   imports: [
     BrowserModule,
